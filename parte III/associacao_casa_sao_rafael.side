@@ -1,0 +1,84 @@
+{
+  "id": "33331765-5805-4eaf-aca2-87fba3b45e56",
+  "version": "2.0",
+  "name": "associacao_casa_sao_rafael",
+  "url": "https://juhhvoid.github.io",
+  "tests": [{
+    "id": "e7ac0238-3c3d-441a-969d-37aa0ee662d2",
+    "name": "Feedback a empresa",
+    "commands": [{
+      "id": "4e82bb41-6d7b-4682-a12e-468050579cf7",
+      "comment": "",
+      "command": "open",
+      "target": "/TrabalhoParteII/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2093a92-786f-4c03-8c04-c74650058c74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a556156-b089-40d8-bb73-22326f3f26d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mensagem",
+      "targets": [
+        ["linkText=Mensagem", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mensagem')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mensagem.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mensagem')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad7aa6b2-3c4d-4d21-8756-a47d6e302079",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtTextArea",
+      "targets": [
+        ["id=txtTextArea", "id"],
+        ["css=#txtTextArea", "css:finder"],
+        ["xpath=//textarea[@id='txtTextArea']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf17edde-fe43-4ed9-99d4-4c9fb0cd83b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtTextArea",
+      "targets": [
+        ["id=txtTextArea", "id"],
+        ["css=#txtTextArea", "css:finder"],
+        ["xpath=//textarea[@id='txtTextArea']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Teste automatizado engenharia de software definitivo.\\nTeste\\nTestando.\\nGrato!"
+    }, {
+      "id": "63cd11b9-470a-4ee0-bd0a-eb869e83bf7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.subBtn",
+      "targets": [
+        ["css=.subBtn", "css:finder"],
+        ["xpath=//input[@value='Comentar']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4917001a-3295-48f6-9b2b-1cb951a2e8b6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e7ac0238-3c3d-441a-969d-37aa0ee662d2"]
+  }],
+  "urls": ["https://juhhvoid.github.io/"],
+  "plugins": []
+}
